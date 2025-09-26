@@ -1,7 +1,7 @@
 package com.expensetracker;
 
 import com.expensetracker.util.DatabaseConnection;
-import com.expensetracker.gui.MainFrame;
+import com.expensetracker.gui.ExpenseTrackerGUI;
 
 import javax.swing.SwingUtilities;
 
@@ -16,7 +16,7 @@ public class Main {
         }
 
         SwingUtilities.invokeLater(() -> {
-            MainFrame frame = new MainFrame();
+            ExpenseTrackerGUI frame = new ExpenseTrackerGUI();
             frame.setVisible(true);
         });
     }
